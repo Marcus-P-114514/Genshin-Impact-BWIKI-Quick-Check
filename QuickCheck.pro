@@ -17,6 +17,9 @@ HEADERS += \
 
 FORMS += \
     mainwindow.ui
+TRANSLATIONS +=\
+    quickcheck_en_US.ts
+    quickcheck_en_UK.ts
 
 RC_ICONS = application.ico
 
@@ -24,3 +27,7 @@ RC_ICONS = application.ico
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    quickcheck_en_UK.ts \
+    quickcheck_en_US.ts
