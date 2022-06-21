@@ -28,6 +28,8 @@ private slots:
 
     void on_lineEdit_2_textEdited(const QString &arg1);
 
+    void on_prefrence_window_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

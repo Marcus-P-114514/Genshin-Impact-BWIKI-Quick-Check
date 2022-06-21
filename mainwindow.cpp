@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "QDesktopServices"
 #include "QUrl"
+#include "settings.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -375,5 +376,12 @@ void MainWindow::on_lineEdit_2_textEdited(const QString &arg1)
         }
 
         }}
+}
+
+
+void MainWindow::on_prefrence_window_triggered()
+{
+    settings *set = new settings;
+    set->show();
 }
 

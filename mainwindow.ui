@@ -6,9 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>683</width>
-    <height>296</height>
+    <width>686</width>
+    <height>363</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Source Han Serif SC</family>
+   </font>
   </property>
   <property name="windowTitle">
    <string>原神BWiKi 快速跳转</string>
@@ -22,6 +27,9 @@
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
       </property>
       <property name="title">
        <string>基本</string>
@@ -39,8 +47,15 @@
            </property>
            <property name="font">
             <font>
-             <family>Consolas</family>
+             <family>Source Han Serif SC</family>
+             <pointsize>9</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
            </property>
            <property name="dragEnabled">
             <bool>true</bool>
@@ -54,6 +69,9 @@
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
            </property>
            <property name="text">
             <string>跳转</string>
@@ -73,6 +91,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
+      </property>
       <property name="title">
        <string>进阶</string>
       </property>
@@ -87,6 +108,9 @@
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
+           </property>
            <property name="text">
             <string>指定Namespace：</string>
            </property>
@@ -99,6 +123,9 @@
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
            </property>
            <item>
             <property name="text">
@@ -139,6 +166,9 @@
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
+           </property>
            <property name="text">
             <string>启用编辑：</string>
            </property>
@@ -151,6 +181,9 @@
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
            </property>
            <item>
             <property name="text">
@@ -166,6 +199,9 @@
          </item>
          <item row="2" column="0">
           <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
+           </property>
            <property name="text">
             <string>打开子文件：</string>
            </property>
@@ -178,6 +214,9 @@
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
            </property>
            <property name="dragEnabled">
             <bool>true</bool>
@@ -200,6 +239,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="styleSheet">
+       <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
+      </property>
       <property name="title">
        <string>预览</string>
       </property>
@@ -208,6 +250,9 @@
         <layout class="QGridLayout" name="gridLayout_5">
          <item row="0" column="0">
           <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">font: 9pt &quot;Source Han Serif SC&quot;;</string>
+           </property>
            <property name="text">
             <string>预计打开的URL：</string>
            </property>
@@ -222,7 +267,7 @@
             </sizepolicy>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: rgb(33, 150, 243);</string>
+            <string notr="true">color: rgb(33, 150, 243);font: 9pt &quot;Source Han Serif SC&quot;;</string>
            </property>
            <property name="readOnly">
             <bool>true</bool>
@@ -236,6 +281,50 @@
     </item>
    </layout>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>686</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="prefrence_window"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="font">
+     <font>
+      <family>Source Han Serif SC</family>
+     </font>
+    </property>
+    <property name="title">
+     <string>关于</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="prefrence_window">
+   <property name="text">
+    <string>偏好设置</string>
+   </property>
+   <property name="toolTip">
+    <string>打开偏好设置</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Han Serif SC</family>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+,</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
